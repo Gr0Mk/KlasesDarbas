@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktai</title>
+    <link rel="stylesheet" href="CSS/stilius.css">
+    <link rel="stylesheet" href="CSS/rwd.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/variables.css">
+</head>
+<body>
+<div class="wraper">
+    <header>
+        <div class="logo"><img src="" alt="LOGO"></div>
+        <div class="slogan">Mano sukis 2022->2023</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Pradzia</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="kontaktai.html">Kontaktai</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="http://localhost/kursiustiduomenis.php" method="GET" class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <label for="fn" class="form-label">Vardas</label>
+                </div>
+                <div class="col">
+                    <input name="firstname" type="text" id="fn" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="qtype" class="form-label">Klausimo tipas</label>
+                </div>
+                <div class="col">
+                    <select name="q_type" id="qtype" class="form-control" >
+                        <option value="ats1">Del darbu</option>
+                        <option value="ats2">Del finansu</option>
+                        <option value="ats3">Del nauju uzsakymu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="zinute" class="form-label">Tavo Zinute man</label>
+                    <br>
+                    <textarea name="message" rows="10" cols="30" id="zinute" class="form-control" >
+                        The cat was playing in the garden.
+                    </textarea>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <button type="button" onclick="alert('Hello World!')" class="form-control btn btn-secondary" >Labas!</button>
+                </div>
+                <div class="col">
+                    <input value="Siųsti" type="submit" class="form-control btn btn-primary" >
+                </div>
+            </div>
+        </form>
+    </main>
+    <aside>
+        <div class="reklama">1 reklama</div>
+        <div class="reklama">2 reklama</div>
+        <div class="reklama">3 reklama</div>
+    </aside>
+    <footer>
+        Visos teisės saugomos &copy; 2022
+    </footer>
+</div>
+</body>
+</html>

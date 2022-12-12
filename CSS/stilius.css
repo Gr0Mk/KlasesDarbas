@@ -1,0 +1,54 @@
+html, body {
+    background-image: url(../Images/bck.jpg);
+    color: #cccccc;
+    font-family: Helvetica
+}
+nav li > a {
+    color: beige;
+}
+
+nav li:hover {
+    background-color: #9bd4e5;
+}
+
+aside {
+    width: 220px;
+    border-top: 1px solid #9bd4e5;
+    border-left: 1px solid #9bd4e5;
+    border-right: 1px solid #9bd4e5;
+    border-bottom: 1px solid #9bd4e5;
+}
+
+footer {
+    border-top: 1px solid #9bd4e5;
+    border-left: 1px solid #9bd4e5;
+    border-right: 1px solid #9bd4e5;
+    border-bottom: 1px solid #9bd4e5;
+}
+main {
+    border-top: 1px solid #9bd4e5;
+    border-left: 1px solid #9bd4e5;
+    border-right: 1px solid #9bd4e5;
+    border-bottom: 1px solid #9bd4e5;
+}
+header {
+    background-color: #000000;
+}
+nav {
+    background-color: #252c34;
+}
+html, body {
+    background-image: url(../Images/bck.jpg);
+    color: #cccccc;
+    font-family: Helvetica
+}
+header nav li {
+    border-top: 1px solid #9bd4e5;
+    border-left: 1px solid #9bd4e5;
+    border-right: 1px solid #9bd4e5;
+    border-bottom: 1px solid #9bd4e5;
+}
+footer nav li {
+    border-right: 1px solid #9bd4e5;
+    border-left: 1px solid #9bd4e5;
+}

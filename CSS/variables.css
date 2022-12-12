@@ -1,0 +1,13 @@
+:root {
+    --main-primary-color: green;
+    --main-primary-text-color: #de0c0c;
+    --main-secondary-color: #wd62c7;
+    --main-secondary-text-color: #ce24e0;
+    --wraper-width: 1400px;
+    --foto-plotis: 200px;
+
+}
+
+.var {
+    --foto-plotis: 400px;
+}
