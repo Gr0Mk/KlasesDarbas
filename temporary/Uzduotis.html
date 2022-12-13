@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="script.js"></script>
 <body>
 
-<h1>Užduotis 1</h1>
-<p>Apskritimo ploto apskaičiavimas, žinant apskritimo r=15:</p>
-<script>
-    let radius = 15
-    let Aplotas =Math.PI * Math.pow(radius, 2)
-    document.write(Aplotas)
-</script>
-<p>Apskritimo ilgio apskaičiavimas, žinant apskritimo r=15:</p>
-<script>
-    let Ailgis = 2 * Math.PI * radius
-    document.write(Ailgis)
-</script>
+<h3>Užduotis 1</h3>
+<p><b>Apskritimo ploto apskaičiavimas, žinant apskritimo r=15:</b></p>
+<script>document.write(Aplotas)</script>
+<p><b>Apskritimo ilgio apskaičiavimas, žinant apskritimo r=15:</b></p>
+<script>document.write(Ailgis)</script>
 
-<h1>Užduotis 2</h1>
-<p>--- --- --- ----:</p>
+<h3>Užduotis 2</h3>
+<p>NĖRA</p>
 
-<h1>Užduotis 3</h1>
+<h3>Užduotis 3</h3>
 <p>Atskiri kintamieji apie sudentą: vardas, pavardė, kursas, kur mokosi, pažymių masyvas:</p>
 
-<h1>Užduotis 4</h1>
+<div class="info">
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>Kursas</th>
+            <th>Mokykla</th>
+            <th>Paž. masyvas</th>
+        </tr>
+        <tr>
+            <td><script>document.write(vardas)</script><br></td>
+            <td><script>document.write(pavarde)</script><br></td>
+            <td><script>document.write(kursas)</script><br></td>
+            <td><script>document.write(mokykla)</script><br></td>
+            <td><script>document.write(pmasyvas)</script></td>
+        </tr>
+    </table>
+</div>
+
+<h3>Užduotis 4</h3>
 <p>Išveskite visus šiuos duomenis sakinio pavidalu:</p>
 
-<h1>Užduotis 5</h1>
+<div id="infosakinys">Informacija apie mokinį:
+<script>document.write(vardas)</script>
+<script>document.write(pavarde)</script>,
+<script>document.write(kursas)</script> kursas,
+<script>document.write(mokykla)</script> mokykla, pažymių masyvas:
+<script>document.write(pmasyvas)</script>.
+</div>
+
+<h3>Užduotis 5</h3>
 <p>Išveskite visų kintamųjų apibūdinimus su tipais (naudoti typeof), pvz:
 "Parametro 'vardas' tipas yra 'string'
 "Parametro 'kursas' tipas yra 'number'</p>
+<table>
+    <tr>
+       <th>Kintamasis</th>
+        <th>Tipas</th>
+    </tr>
+    <tr>
+    <td><script>document.write(vardas)</script></td>
+    <td><script>document.write(typeof vardas)</script></td>
+    </tr>
+    <tr>
+        <td><script>document.write(pavarde)</script></td>
+        <td><script>document.write(typeof pavarde)</script></td>
+    </tr>
+    <tr>
+        <td><script>document.write(kursas)</script></td>
+        <td><script>document.write(typeof kursas)</script></td>
+    </tr>
+    <tr>
+    <td><script>document.write(mokykla)</script></td>
+    <td><script>document.write(typeof mokykla)</script></td>
+    </tr>
+    <tr>
+    <td><script>document.write(pmasyvas)</script></td>
+    <td><script>document.write(typeof pmasyvas)</script></td>
+    </tr>
+
+</table>
 
 </body>
 </html>
