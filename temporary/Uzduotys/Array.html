@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klasės darbai [arrays]</title>
+</head>
+<body>
+
+
+<h1>[array] užduotis</h1>
+
+<h3>Every other array funkcija (kas antras elementas):</h3>
+<script>
+    let masyvas = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
+    let everyother =  masyvas.filter((element,  index) => {
+    return index % 2 === 0;
+  })
+    document.write(everyother);
+</script>
+
+<br>
+<h3>Every other redaguojamas su let everyX ir everyothernumber kintamaisiais:</h3>
+<script>
+    let everyX;
+    let everyothernumber = 3 /*Kas kelintas elementas*/
+    let indexN = 2 /*Index numeris nuo kurio pradedama*/
+    everyX =  masyvas.filter((element,  index) => {
+    return index % everyothernumber === indexN;
+  })
+  document.write(everyX)
+</script>
+
+<br>
+<h3>Išfiltruotas [array] tik 'number':</h3>
+
+<script>
+  const numbers = masyvas.filter(
+          element => typeof element === 'number'/* Išfiltruojamai elementai 'number tipo'*/
+  );
+  document.write(numbers)
+</script>
+
+<br>
+<h3>Išfiltruotas [array] ir suskaičiuota 'object' tipo elementai  //acc - accumulator(flexible array metodas):</h3>
+
+<script>
+    const objcount = masyvas.reduce(function(acc, element) {
+        if (typeof element === 'object') {
+            return acc + 1;
+        } else {
+            return acc;
+        }
+    }, 0);
+
+    document.write(objcount);
+
+</script>
+
+<br>
+<h3>Surinkti visus string tipo kintamuosius ir sujungti nurodytu simboliu:</h3>
+
+ <!--Nėra..-->
+
+</body>
+</html>
