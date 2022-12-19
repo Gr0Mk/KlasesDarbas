@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>UzduotyS/ExamplE</title>
+
+<!--Uzduotis 2022-12-20 JS Event Listeners-->
+
+ <!--  1. Sukurkite HTML dokumentą su mygtuku ir teksto lauku. Naudodami Java Script,
+  padarykite taip, kad paspaudus mygtuką, teksto lauke atsirastų žinutė "Labas, pasauli!".
+       2. Sukurkite HTML dokumentą su keliais pasirinkimo laukais ir mygtuku. Naudodami Java Script,
+  padarykite taip, kad paspaudus mygtuką, atsirastų HTML forma su keliais formos elementais.
+       3. Sukurkite HTML dokumentą su lentele, kurioje yra keli stulpeliai ir eilutės.
+  Naudodami Java Script, padarykite taip, kad paspaudus mygtuką, atsirastų nauja eilutė lentelėje su įvestais duomenimis.
+  Duomenys turėtų būti įvesti į formos laukus.
+  -->
+
+
+</head>
+<body>
+
+<!--uzduotis1-->
+<button id="button1">Mygtukas1</button>
+<input type="text" id="input1">
+
+<br>
+<!--uzduotis2-->
+<br>
+
+<button type="button" onclick="rodyti()">rodyti formą</button>
+
+<form id="forma" style="display:none;">
+    <label for="inp1">Element1:</label><br>
+    <input type="text" id="inp1" name="name" value=""><br>
+    <label for="inp2">Element2:</label><br>
+    <input type="text" id="inp2" name="name" value=""><br>
+    <label for="inp3">Element3:</label><br>
+    <input type="text" id="inp3" name="name" value=""><br>
+</form>
+
+
+
+<br>
+<!--uzduotis3-->
+<br>
+
+<button id="button2">Prideti eilutę</button>
+
+<table id="lentele">
+    <tr>
+        <th>header1</th>
+        <th>header2</th>
+        <th>header3</th>
+    </tr>
+    <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+    </tr>
+</table>
+
+
+
+<script src="js/EListeners.js"></script>
+
+
+
+<!--
+___END___ Uzduotis 2022-12-20 JS Event Listeners ___END___-->
+
+</body>
+</html>
+
+
